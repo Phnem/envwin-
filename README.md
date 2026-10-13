@@ -21,6 +21,9 @@
   <img src="assets/preview_1.png" alt="Desktop Preview with Wallpaper and MyDock" width="49%">
   <img src="assets/preview_2.png" alt="Desktop Preview with Workspace and Theme" width="49%">
 </p>
+<p align="center">
+  <img src="assets/terminal_preview.png" alt="Terminal Interface Preview" width="98%">
+</p>
 
 ---
 
@@ -41,7 +44,8 @@
 envwin by Vetro/
 ├── assets/                   # Preview screenshots
 │   ├── preview_1.png
-│   └── preview_2.png
+│   ├── preview_2.png
+│   └── terminal_preview.png
 ├── apply_configs.bat         # Russian edition (CP1251 encoded for CMD compatibility)
 ├── apply_configs_en.bat      # English edition
 ├── README.md                 # Documentation

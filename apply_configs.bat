@@ -1,7 +1,7 @@
 @echo off
 chcp 1251 >nul
 setlocal EnableExtensions
-title Менеджер окружения: MyDockFinder, Wallpaper Engine, Cursors & Terminal
+title Менеджер окружения: MyDockFinder, Wallpaper Engine, Cursors и Terminal
 
 REM Определение базовой папки скрипта
 set "SCRIPT_DIR=%~dp0"
@@ -509,7 +509,7 @@ goto menu
 
 
 REM ================================================================================
-REM [4] WINDOWS TERMINAL & POWERSHELL
+REM [4] WINDOWS TERMINAL И POWERSHELL
 REM ================================================================================
 :apply_terminal
 cls

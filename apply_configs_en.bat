@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableExtensions
-title Environment Setup: MyDockFinder, Wallpaper Engine, Cursors & Terminal
+title Environment Setup: MyDockFinder, Wallpaper Engine, Cursors and Terminal
 
 REM Script directory resolution
 set "SCRIPT_DIR=%~dp0"
@@ -17,7 +17,7 @@ cls
 echo.
 echo  ================================================================================
 echo                      E N V W I N   B Y   V E T R O
-echo             Windows Environment Customization & Deployment Manager
+echo             Windows Environment Customization and Deployment Manager
 echo  ================================================================================
 echo.
 echo   [!] USER NOTICE:
@@ -31,7 +31,7 @@ echo.
 echo    [1] Apply MyDockFinder config         (icons, theme and settings)
 echo    [2] Apply Wallpaper Engine config      (GIFs, playlists and settings)
 echo    [3] Install and apply cursor scheme    (Material Design Rounded Dark)
-echo    [4] Setup Windows Terminal & Prompt    (Tokyo Night, Acrylic Blur, Prompt)
+echo    [4] Setup Windows Terminal and Prompt  (Tokyo Night, Acrylic Blur, Prompt)
 echo    [0] Exit
 echo.
 set "CHOICE="
@@ -514,7 +514,7 @@ REM ============================================================================
 cls
 echo.
 echo  ================================================================================
-echo       SETUP WINDOWS TERMINAL & POWERSHELL (TOKYO NIGHT, ACRYLIC, PROMPT)
+echo       SETUP WINDOWS TERMINAL AND POWERSHELL (TOKYO NIGHT, ACRYLIC, PROMPT)
 echo  ================================================================================
 echo.
 
