@@ -2,12 +2,13 @@
 
 <p align="center">
   <b>Automated Windows Environment & Customization Deployment Script</b><br>
-  <i>Fast, one-click restoration and setup for MyDockFinder, Wallpaper Engine, and Material Design Dark Cursors.</i>
+  <i>Fast, one-click restoration and setup for MyDockFinder, Wallpaper Engine, Material Design Dark Cursors, and Windows Terminal.</i>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Windows%2010%20%7C%2011-blue?style=flat-square&logo=windows" alt="Platform">
   <img src="https://img.shields.io/badge/Shell-Batch%20%2F%20PowerShell-0078D4?style=flat-square" alt="Shell">
+  <img src="https://img.shields.io/badge/Theme-Tokyo%20Night%20%7C%20macOS-purple?style=flat-square" alt="Theme">
   <img src="https://img.shields.io/badge/Language-EN%20%7C%20RU-success?style=flat-square" alt="Language">
   <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square" alt="License">
 </p>
@@ -30,6 +31,7 @@
 - **MyDockFinder**: Complete dock layout, pinned application shortcuts (`ico.ini`), taskbar behaviors, and active macOS themes (`MacOS 26 Pein`).
 - **Wallpaper Engine**: Display assignments, profile settings, active playlists (`config.json`), user projects, and animated GIF wallpapers.
 - **Cursor Scheme**: System-wide installation and instant live application of the **Material Design Rounded Dark** cursor scheme via native Win32 API calls (no restart or re-login required).
+- **Windows Terminal & PowerShell**: Frosted glass Acrylic blur (85% opacity), deep **Tokyo Night** color scheme, padded margins, and a sleek modern PowerShell prompt with Git branch status and intelligent history search.
 
 ---
 
@@ -57,10 +59,13 @@ envwin by Vetro/
     │   ├── config.json       # Monitor layouts, audio levels, active playlists
     │   ├── gifs/             # Animated GIF wallpapers & workshop previews
     │   └── projects/         # Custom user wallpaper projects
-    └── cursor/               # Material Design Rounded Dark cursor package
-        ├── Install.inf       # Windows Setup INF script
-        ├── *.cur             # Static cursors (arrow, hand, text, etc.)
-        └── *.ani             # Animated cursors (working, busy)
+    ├── cursor/               # Material Design Rounded Dark cursor package
+    │   ├── Install.inf       # Windows Setup INF script
+    │   ├── *.cur             # Static cursors (arrow, hand, text, etc.)
+    │   └── *.ani             # Animated cursors (working, busy)
+    └── terminal/             # Windows Terminal & PowerShell aesthetic setup
+        ├── settings.json     # Windows Terminal profile (Tokyo Night, Acrylic 85%, Padding)
+        └── Microsoft.PowerShell_profile.ps1 # Sleek minimalist prompt with Git & PSReadLine
 ```
 
 ---
@@ -78,9 +83,10 @@ Upon launch, a safety notice is displayed reminding you that any conflicting loc
 ### 3. Interactive Menu
 Select which component you want to apply (one action at a time):
 ```text
-  [1] Apply MyDockFinder config      (icons and settings)
-  [2] Apply Wallpaper Engine config   (GIFs and settings)
-  [3] Install and apply cursor scheme (Material Design Rounded Dark)
+  [1] Apply MyDockFinder config         (icons, theme and settings)
+  [2] Apply Wallpaper Engine config      (GIFs, playlists and settings)
+  [3] Install and apply cursor scheme    (Material Design Rounded Dark)
+  [4] Setup Windows Terminal & Prompt    (Tokyo Night, Acrylic Blur, Prompt)
   [0] Exit
 ```
 
@@ -96,7 +102,7 @@ The script scans your system automatically:
 - Running processes are safely terminated before file replacement to prevent file locks and avoid configuration loss on program exit.
 - Target files and media folders are verified and copied.
 - Cursors are registered in `HKCU\Control Panel\Cursors` and applied live through Win32 `SystemParametersInfo(SPI_SETCURSORS)`.
-- The script gives you an immediate prompt to launch the updated program.
+- Terminal settings are placed directly into Windows Terminal's LocalState package and user profile documents.
 
 ---
 
@@ -110,7 +116,8 @@ The script scans your system automatically:
 1. **MyDockFinder**: Полный перенос дока, ярлыков приложений, настроек скрытия панели задач Windows и темы `MacOS 26 Pein`.
 2. **Wallpaper Engine**: Восстановление конфига `config.json` (мониторы, профиль, плейлисты) и копирование GIF-обоев.
 3. **Курсор**: Установка набора курсоров `Material Design Rounded Dark` в систему с моментальным применением без перезагрузки системы.
-4. **Безопасность**: Завершение процессов перед перезаписью, чтобы программы не блокировали файлы и не затирали новые настройки.
+4. **Терминал**: Настройка Windows Terminal (цветовая схема Tokyo Night, полупрозрачный акрил с эффектом размытия 85%, отступы, шрифт Cascadia Code) и кастомный минималистичный prompt в PowerShell с отображением Git-веток и навигацией по истории.
+5. **Безопасность**: Завершение процессов перед перезаписью, чтобы программы не блокировали файлы и не затирали новые настройки.
 
 ---
 

@@ -1,0 +1,131 @@
+﻿{
+    "$help":  "https://aka.ms/terminal-documentation",
+    "$schema":  "https://aka.ms/terminal-profiles-schema",
+    "actions":  [
+
+                ],
+    "copyFormatting":  "none",
+    "copyOnSelect":  false,
+    "defaultProfile":  "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "keybindings":  [
+                        {
+                            "id":  "Terminal.CopyToClipboard",
+                            "keys":  "ctrl+c"
+                        },
+                        {
+                            "id":  "Terminal.PasteFromClipboard",
+                            "keys":  "ctrl+v"
+                        },
+                        {
+                            "id":  "Terminal.FindText",
+                            "keys":  "ctrl+shift+f"
+                        },
+                        {
+                            "id":  "Terminal.DuplicatePaneAuto",
+                            "keys":  "alt+shift+d"
+                        }
+                    ],
+    "newTabMenu":  [
+                       {
+                           "type":  "remainingProfiles"
+                       }
+                   ],
+    "profiles":  {
+                     "defaults":  {
+                                      "colorScheme":  "Tokyo Night",
+                                      "opacity":  85,
+                                      "useAcrylic":  true,
+                                      "cursorShape":  "bar",
+                                      "padding":  "14, 14, 14, 14",
+                                      "font":  {
+                                                   "face":  "Cascadia Code",
+                                                   "size":  11
+                                               }
+                                  },
+                     "list":  [
+                                  {
+                                      "commandline":  "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                                      "guid":  "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                                      "hidden":  false,
+                                      "name":  "Windows PowerShell"
+                                  },
+                                  {
+                                      "commandline":  "%SystemRoot%\\System32\\cmd.exe",
+                                      "guid":  "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                                      "hidden":  false,
+                                      "name":  "Командная строка"
+                                  },
+                                  {
+                                      "guid":  "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                                      "hidden":  false,
+                                      "name":  "Azure Cloud Shell",
+                                      "source":  "Windows.Terminal.Azure"
+                                  },
+                                  {
+                                      "guid":  "{9607ca51-ddeb-5257-9735-b8c4a85299e3}",
+                                      "hidden":  false,
+                                      "name":  "Developer Command Prompt for VS 2022",
+                                      "source":  "Windows.Terminal.VisualStudio"
+                                  },
+                                  {
+                                      "guid":  "{ba5a946e-d342-576f-97d2-420c3b8cda45}",
+                                      "hidden":  false,
+                                      "name":  "Developer PowerShell for VS 2022",
+                                      "source":  "Windows.Terminal.VisualStudio"
+                                  },
+                                  {
+                                      "guid":  "{9d5a8608-6baf-5532-8a5c-7497c8c675a0}",
+                                      "hidden":  false,
+                                      "name":  "Developer Command Prompt for VS 18 (2)",
+                                      "source":  "Windows.Terminal.VisualStudio"
+                                  },
+                                  {
+                                      "guid":  "{4df13fdc-a8cf-5d27-9e26-2d6965d182bd}",
+                                      "hidden":  false,
+                                      "name":  "Developer PowerShell for VS 18 (2)",
+                                      "source":  "Windows.Terminal.VisualStudio"
+                                  },
+                                  {
+                                      "guid":  "{1264a162-7d19-5384-bc70-9e38b11bba66}",
+                                      "hidden":  false,
+                                      "name":  "Ubuntu-24.04",
+                                      "source":  "Microsoft.WSL"
+                                  },
+                                  {
+                                      "guid":  "{5e228c2e-7df9-5be4-9cde-2f693f3333cb}",
+                                      "hidden":  false,
+                                      "name":  "OpenClawGateway",
+                                      "source":  "Microsoft.WSL"
+                                  }
+                              ]
+                 },
+    "schemes":  [
+                    {
+                        "name":  "Tokyo Night",
+                        "background":  "#1a1b26",
+                        "foreground":  "#c0caf5",
+                        "selectionBackground":  "#33467c",
+                        "cursorColor":  "#c0caf5",
+                        "black":  "#15161e",
+                        "red":  "#f7768e",
+                        "green":  "#9ece6a",
+                        "yellow":  "#e0af68",
+                        "blue":  "#7aa2f7",
+                        "purple":  "#bb9af7",
+                        "cyan":  "#7dcfff",
+                        "white":  "#a9b1d6",
+                        "brightBlack":  "#414868",
+                        "brightRed":  "#f7768e",
+                        "brightGreen":  "#9ece6a",
+                        "brightYellow":  "#e0af68",
+                        "brightBlue":  "#7aa2f7",
+                        "brightPurple":  "#bb9af7",
+                        "brightCyan":  "#7dcfff",
+                        "brightWhite":  "#c0caf5"
+                    }
+                ],
+    "themes":  [
+
+               ],
+    "theme":  "dark"
+}
