@@ -14,6 +14,15 @@
 
 ---
 
+## 📸 Preview / Результат
+
+<p align="center">
+  <img src="assets/preview_1.png" alt="Desktop Preview with Wallpaper and MyDock" width="49%">
+  <img src="assets/preview_2.png" alt="Desktop Preview with Workspace and Theme" width="49%">
+</p>
+
+---
+
 ## 📖 Overview
 
 **envwin by Vetro** is an all-in-one configuration package and batch deployment utility for Windows. It provides a clean, safe, and automated workflow to migrate and apply custom aesthetic configurations:
@@ -28,6 +37,9 @@
 
 ```text
 envwin by Vetro/
+├── assets/                   # Preview screenshots
+│   ├── preview_1.png
+│   └── preview_2.png
 ├── apply_configs.bat         # Russian edition (CP1251 encoded for CMD compatibility)
 ├── apply_configs_en.bat      # English edition
 ├── README.md                 # Documentation
