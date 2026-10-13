@@ -1,0 +1,19 @@
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.tmp
+*.temp
+*.log
+
+# IDE / Editors
+.idea/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Backups
+*.bak
+*~
